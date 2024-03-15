@@ -1,0 +1,69 @@
+.hero {
+  height: calc(100vh - 100px);
+  overflow: hidden;
+  background: linear-gradient(180deg, #2a2f4f, rgb(36, 40, 68));
+  position: relative;
+
+  .wrapper {
+    max-width: 1366px;
+    height: 100%;
+    margin: auto;
+    user-select: none;
+
+    .textContainer {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 40px;
+      position: relative;
+      z-index: 10;
+
+      h2 {
+        font-size: 30px;
+        color: #e5beec;
+        letter-spacing: 10px;
+      }
+
+      h1 {
+        font-size: 88px;
+        color: #fde2f3;
+      }
+
+      .buttons {
+        button {
+          padding: 12px 20px;
+          border: 1px solid #fde2f3;
+          border-radius: 10px;
+          background-color: transparent;
+          color: #fde2f3;
+          cursor: pointer;
+        }
+      }
+
+      img {
+        width: 50px;
+      }
+    }
+  }
+
+  .imageContainer {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .slidingTextContainer {
+    position: absolute;
+    font-size: 50vh;
+    bottom: -120px;
+    white-space: nowrap;
+    color: #ffffff09;
+    font-weight: bold;
+    width: 50%;
+    user-select: none;
+    z-index: 1;
+  }
+}
