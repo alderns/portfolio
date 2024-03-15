@@ -43,13 +43,13 @@ const Hero = () => {
           <motion.h2 variants={textVariants}>ALDRIN DE LEON</motion.h2>
           <motion.h1 variants={textVariants}>Full Stack Web Developer</motion.h1>
           <motion.div className="buttons" variants={textVariants}>
-            <motion.button>Contact Me</motion.button>
+            <motion.a href="#Contact">Contact Me</motion.a>
           </motion.div>
           <motion.img variants={textVariants} animate="scrollButton" src="/images/scroll.png" alt=""></motion.img>
         </motion.div>
       </div>
       <motion.div className="slidingTextContainer" variants={sliderVariants} initial="initial" animate="animate">
-        Mineral Drinking
+        Angular ReactJS ASP.Net NodeJS Tailwind C#
       </motion.div>
       <div className="imageContainer"></div>
     </div>
