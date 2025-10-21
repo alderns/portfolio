@@ -19,8 +19,8 @@ const Sidebar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <motion.div className="sidebar" animate={open ? "open" : "closed"}>
-      <motion.div className="bg" variants={variants}>
+    <motion.div className="sidebar flex flex-col items-center justify-center bg-[#fde2f3] text-black" animate={open ? "open" : "closed"}>
+      <motion.div className="z-10 fixed top-0 left-0 bottom-0 w-[350px] bg-[#fde2f3]" variants={variants}>
         <Links />
       </motion.div>
       <ToggleButton setOpen={setOpen} />

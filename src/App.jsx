@@ -1,4 +1,3 @@
-import Test from "./Test";
 import "./app.scss";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";

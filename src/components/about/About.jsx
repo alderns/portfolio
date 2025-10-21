@@ -47,14 +47,14 @@ const Single = ({ item }) => {
   const y = useTransform(scrollYProgress, [0, 1], [-200, 200]);
   return (
     <section>
-      <div className="container">
-        <div className="wrapper">
-          <div className="imageContainer" ref={ref}>
-            <img src={item.img} alt="" />
+      <div className="container flex items-center justify-center w-full h-full">
+        <div className="wrapper max-w-[1280px] h-full mx-auto select-none flex items-center justify-center gap-[50px]">
+          <div className="imageContainer flex-5 h-[40%]" ref={ref}>
+            <img className="rounded-3xl w-full h-full object-cover" src={item.img} alt="" />
           </div>
-          <motion.div className="textContainer" style={{ y }}>
-            <h2>{item.title}</h2>
-            <p>{item.desc}</p>
+          <motion.div className="textContainer flex-7 flex flex-col gap-4" style={{ y }}>
+            <h2 className="text-7xl font-bold text-[#e5beec]">{item.title}</h2>
+            <p className="text-lg text-[#fde2f3]">{item.desc}</p>
           </motion.div>
         </div>
       </div>
@@ -73,15 +73,15 @@ const About = () => {
     damping: 40,
   });
   return (
-    <div className="about" ref={ref}>
-      <div className="progress1">
-        <motion.div style={{ scaleX }} className="progressBar"></motion.div>
+    <div className="relative bg-gradient-to-b from-[#2a2f4f] to-[#242844] " ref={ref}>
+      <div className="sticky top-0 py-[25px] flex items-center justify-center">
+        <motion.div style={{ scaleX }} className="h-[1px] bg-[#fde2f3] w-[90%]"></motion.div>
       </div>
       {items.map((item) => (
         <Single item={item} key={item.id} />
       ))}
-      <div className="progress2">
-        <motion.div style={{ scaleX }} className="progressBar"></motion.div>
+      <div className="sticky bottom-0 py-[25px] flex items-center justify-center">
+        <motion.div style={{ scaleX }} className="h-[1px] bg-[#fde2f3] w-[90%]"></motion.div>
       </div>
     </div>
   );

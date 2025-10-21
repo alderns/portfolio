@@ -13,16 +13,16 @@ const Parallax = ({ type }) => {
 
   return (
     <div
-      className="parallax"
+      className="parallax h-full w-full relative flex items-center justify-center overflow-hidden"
       ref={ref}
       style={{
         background: type == "About" ? "linear-gradient(180deg, #2A2F4F, #917FB3)" : "linear-gradient(180deg, #917FB3, #E5BEEC)",
       }}
     >
-      <motion.h1 style={{ y: yText }}>{type == "About" ? "Hi, I'm Aldrin" : "What We Did?"}</motion.h1>
-      <motion.div className="mountains"></motion.div>
-      <motion.div style={{ y: yBg, backgroundImage: `url(${type === "About" ? "/images/planets.png" : "/images/sun.png"})` }} className="planets"></motion.div>
-      <motion.div style={{ y: yBg, x: yBg }} className="stars"></motion.div>
+      <motion.h1 className="text-[100px] font-bold text-[#fde2f3] leading-24 bg-cover bg-bottom" style={{ y: yText }}>{type == "About" ? "Hi, I'm Aldrin" : "What We Did?"}</motion.h1>
+      <motion.div className="mountains w-full h-full absolute z-3 bg-cover bg-bottom"></motion.div>
+      <motion.div className="planets w-full h-full absolute z-2 bg-cover bg-bottom" style={{ y: yBg, backgroundImage: `url(${type === "About" ? "/images/planets.png" : "/images/sun.png"})` }} ></motion.div>
+      <motion.div className="stars w-full h-full absolute z-1 bg-cover bg-bottom" style={{ y: yBg, x: yBg }} ></motion.div>
     </div>
   );
 };
