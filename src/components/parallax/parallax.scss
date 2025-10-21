@@ -1,13 +1,33 @@
 .parallax {
-  .mountains {
-    background-image: url("/images/mountains.png");
+  .foreground {
+    background-image: url("/images/foreground.png");
   }
 
-  .planets {
-    background-image: url("/images/planets.png");
+  .computer {
+    background-image: url("/images/computer.png");
   }
 
-  .stars {
-    background-image: url("/images/stars.png");
+  .background {
+    background-image: url("/images/background.png");
+  }
+
+  .light {
+    background-image: url("/images/light.png");
+  }
+
+  .clock {
+    background-image: url("/images/clock.png");
+  }
+
+  .shelf-1 {
+    background-image: url("/images/shelf-1.png");
+  }
+
+  .shelf-2 {
+    background-image: url("/images/shelf-2.png");
+  }
+
+  .calendar {
+    background-image: url("/images/calendar.png");
   }
 }

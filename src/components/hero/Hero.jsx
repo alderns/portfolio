@@ -37,7 +37,7 @@ const sliderVariants = {
 
 const Hero = () => {
   return (
-    <div className="overflow-hidden relative h-full bg-gradient-to-b from-[#2a2f4f] to-[#242844] pt-10">
+    <div className="overflow-hidden relative h-full bg-primary-dark pt-10">
       <div className="wrapper max-w-[1280px] h-full mx-auto select-none">
         <motion.div className="w-1/2 h-full flex flex-col justify-center gap-10 relative z-2" variants={textVariants} initial="initial" animate="animate">
           <motion.h2 className="text-3xl tracking-[10px] text-neutral-200" variants={textVariants}>ALDRIN DE LEON</motion.h2>
